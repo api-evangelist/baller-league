@@ -1,8 +1,28 @@
 aid: baller-league
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/baller-league.png
 name: Baller League
-description: 'Baller League is a company surfaced as a portfolio company of eqt-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: sport. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Baller League is a small-sided (six-a-side) football entertainment
+  league and media format founded in Germany that bills itself as "a new era of
+  football, created for the streets by the streets." Teams are captained by
+  professional footballers, influencers, and streamers, with matches played under
+  a fast-paced ruleset and distributed primarily through live streaming and social
+  video (Twitch, YouTube, TikTok, Instagram) rather than traditional broadcast. The
+  organization has expanded from Germany into the United Kingdom and United States
+  and is running its fourth season. It is a consumer sports-media and entertainment
+  brand; as of this profile it publishes no public developer API, documentation, or
+  developer program. Backed by EQT Ventures and tracked in the API Evangelist
+  network as a portfolio company.'
 url: https://raw.githubusercontent.com/api-evangelist/baller-league/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Sport
+- Football
+- Soccer
+- Media
+- Entertainment
+- Live Streaming
+- League
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/baller-league-domain-security.yml
 - type: Website
   url: https://ballerleague.de/
+- type: TermsOfService
+  url: https://ballerleague.de/c/terms-of-participation
+- type: PrivacyPolicy
+  url: https://ballerleague.de/c/privacy-policy
+- type: Imprint
+  url: https://ballerleague.de/c/imprint
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
